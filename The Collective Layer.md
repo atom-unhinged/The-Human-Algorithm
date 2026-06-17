@@ -1,0 +1,7 @@
+The Human Algorithm is a personal optimization framework — but [[The Human Algorithm|optimization that stops at the individual]] is incomplete. A sovereign, clear-thinking, [[Peace is the Protocol|peace-oriented]] individual produces positive externalities. They parent differently. They teach differently. They build differently. The ripple effect starts with the individual node running clean.
+
+The preservation of human consciousness — the quality of inner life available to each person, and especially each child — depends on communities of individuals who think clearly, act intentionally, and resist the [[Signal vs Slop|noise]] that degrades both minds and cultures.
+This is not ideology. It is systems thinking. Healthy nodes produce healthy networks. [[Epistemic Hygiene]] is the individual practice that scales — one clear thinker influences the people around them, who influence the people around them.
+
+[[The New Literacy]] is the transmission mechanism — if the next generation learns to interact with AI deliberately, to think clearly, to filter signal from slop, the compounding effect over decades is significant.
+Every child deserves access to the tools for a quality inner life. That is what this framework is ultimately for.

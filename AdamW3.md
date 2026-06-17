@@ -1,0 +1,3 @@
+Third iteration of the Adam optimizer lineage applied as an identity framework. Adam → AdamW → AdamW³. Each iteration refines the update rule — reduces overfitting, improves generalization. Applied to the self: not who I was, not who I became, but the optimized version that emerged from repeated correction. Technical, spiritual, and philosophical dimensions unified in a single identifier. The optimizer became the optimized.
+
+See [[AdamW3 as Identity Framework]] for the full framework.

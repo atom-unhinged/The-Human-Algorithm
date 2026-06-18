@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The New Literacy — The Human Algorithm</title>
+<style>
+  :root {
+    --navy: #0f1923;
+    --ink: #1a2332;
+    --mid: #4a5568;
+    --light: #718096;
+    --border: #e2e8f0;
+    --bg: #ffffff;
+    --bg2: #f8fafc;
+    --accent: #2b6cb0;
+    --accent-light: #ebf4ff;
+    --mono: 'Courier New', Courier, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .wordmark {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .back-link {
+    font-size: 0.8rem;
+    color: var(--mid);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s;
+  }
+
+  .back-link:hover { color: var(--accent); }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 2rem 8rem;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .article-tag {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  .article-date {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--light);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 2.5rem;
+  }
+
+  .article-body {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+
+  .article-body p {
+    margin-bottom: 1.4rem;
+  }
+
+  .article-body h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 2.5rem 0 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-body strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  .article-body a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: border-color 0.15s;
+  }
+
+  .article-body a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  .article-body ul, .article-body ol {
+    margin: 0 0 1.4rem 1.5rem;
+  }
+
+  .article-body li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0;
+  }
+
+  .article-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .article-footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <span class="wordmark">THA // Articles</span>
+  </div>
+  <a class="back-link" href="../index.html">← The Human Algorithm</a>
+</header>
+
+<main>
+  <div class="article-meta">
+    <span class="article-tag">Essay</span>
+    <span class="article-date">2026-06-18</span>
+  </div>
+
+  <h1>The New Literacy</h1>
+
+  <div class="article-body">
+
+    <p>The new literacy isn't coding. It isn't prompt engineering. It isn't knowing which AI tool to use for which task.</p>
+
+    <p>It's human. It's the ability to engage AI and algorithmic systems deliberately — directing them toward what you actually want — rather than passively absorbing whatever they hand you.</p>
+
+    <p>Most people are still in receive mode. The optimized human is in transmit mode.</p>
+
+    <hr class="divider">
+
+    <h2>The Fork</h2>
+
+    <p>Here's the thing nobody says clearly enough: you're already inside the system. Social feeds, recommendation engines, language models, cultural loops — they're running whether you notice them or not. There's no clean opt-out.</p>
+
+    <p>The only real choice left is <strong>conscious engagement or unconscious subjection</strong>.</p>
+
+    <p>This isn't paranoia. It's just how these systems work. They're designed to capture attention, shape behavior, and reinforce patterns — yours included. Memnetic effects, as I've come to call them, don't care about your awareness. Ideas transmit into identity quietly. Reward loops shape behavior without announcement. Language patterns program perception at scales most people never think about.</p>
+
+    <p>You can let the current run you. Or you can learn to steer.</p>
+
+    <hr class="divider">
+
+    <h2>What Deliberate Engagement Actually Looks Like</h2>
+
+    <p>It starts with <strong>epistemic hygiene</strong> — knowing how you know what you know. Before accepting any input as true, ask: what's the source, what's the incentive behind it, and what's the evidence? This applies to AI output especially. Language models generate confident, fluent, plausible text. That's not the same as accurate text. The burden of verification sits with you, not the model.</p>
+
+    <p>Next: <strong>signal vs slop</strong>. Signal reduces friction and moves you toward your actual goals. Slop multiplies noise and wastes attention. The difference isn't always obvious — slop often feels productive. The question is whether the output is moving you toward something real or just generating the feeling of movement.</p>
+
+    <p>Finally: treat AI as <strong>a tool you direct, not an oracle you consult</strong>. The distinction matters. A tool extends your capability in the direction you're already moving. An oracle substitutes its judgment for yours. The first builds sovereignty. The second erodes it quietly.</p>
+
+    <p>None of this is complicated. All of it requires practice.</p>
+
+    <hr class="divider">
+
+    <h2>Zooming Out</h2>
+
+    <p>These are scenarios, not predictions. Worth taking seriously.</p>
+
+    <p>If deliberate engagement becomes widespread among even a minority of people, outcomes diverge sharply from the default trajectory. Pockets of high-sovereignty individuals running clean update rules — clear intention, verified inputs, directed AI use — produce compounding advantages in focus, resilience, and resource efficiency. Not because they're smarter. Because they're steering.</p>
+
+    <p>The rest remain in reactive loops — shaped by whoever designed the feed, the model, the incentive structure. That gap compounds.</p>
+
+    <p>AI tools that function as genuine cognitive scaffolds — extending human will rather than quietly redirecting it — become available primarily to those who know how to use them that way. The technology is the same. The relationship to it is not.</p>
+
+    <p>Biotech, cognitive enhancement, and AI capability will accelerate regardless. The question is whether individuals are directing that acceleration or being carried by it.</p>
+
+    <p>These divergences are already visible. They will become more pronounced.</p>
+
+    <hr class="divider">
+
+    <h2>The Responsibility Question</h2>
+
+    <p>If some people engage deliberately and others don't, a real tension emerges. Do the deliberate ones owe something to the wider systems they still share with everyone else?</p>
+
+    <p>I don't have a clean answer. But here's the argument worth wrestling with.</p>
+
+    <p>Sovereignty without connection becomes just another form of separation. If the goal is peace as an operating state — minimum friction, maximum coherence — then withdrawal from the collective layer contradicts the framework itself. A clean node that only optimizes for itself isn't fully optimized.</p>
+
+    <p>On the other hand: you can't force epistemic hygiene on someone who hasn't asked for it. Attempting to do so is just another memnetic infection with better branding.</p>
+
+    <p>The path that makes sense to me is <strong>modeling and invitation</strong>. Live the protocol visibly. Share the tools openly. Let results speak. Don't withdraw from the collective layer, but don't sacrifice your signal trying to drag people into it either.</p>
+
+    <p>This is part of the work too — figuring out how the optimized individual relates to the rest of the human stack.</p>
+
+    <hr class="divider">
+
+    <h2>An Open Invitation</h2>
+
+    <p>This framework isn't finished. It's a first branch — v0.1 of a living document under active development. It's not presented as doctrine or final theory. It's an open invitation to engage deliberately, test the ideas against your own experience, and build from there.</p>
+
+    <p>The goal is simple: a repeatable protocol for healthy, intentional relationship with AI and algorithmic systems. One that protects human sovereignty rather than eroding it.</p>
+
+    <p>The optimizer becomes the optimized. That's the journey.</p>
+
+    <p>The core framework is here: <a href="https://atom-unhinged.github.io/The-Human-Algorithm/" target="_blank">The Human Algorithm</a></p>
+
+  </div>
+
+  <div class="article-footer">
+    <span>v0.1 // Active Development // Open Source Optimization</span>
+    <a href="../index.html">← Back to Framework</a>
+  </div>
+
+</main>
+
+</body>
+</html>

@@ -9,3 +9,5 @@ This is [[Memnetic]] at the systems level — the mechanism by which cultural pr
 [[NLP2|NLP²]] is the recognition that the same update rule runs at machine, mind, and culture scale simultaneously. [[The Sovereignty Principle]] is the capacity to choose your own reward function rather than accepting the one society provides.
 
 [[The Human Algorithm]] is the practice of making that choice deliberately.
+
+See [[RLAiF]] for the evolution of this mechanism — where AI systems rate other AI outputs, removing the human from the feedback loop entirely.

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jo — The Human Algorithm</title>
+<style>
+  :root {
+    --navy: #0f1923;
+    --ink: #1a2332;
+    --mid: #4a5568;
+    --light: #718096;
+    --border: #e2e8f0;
+    --bg: #ffffff;
+    --bg2: #f8fafc;
+    --accent: #2b6cb0;
+    --accent-light: #ebf4ff;
+    --mono: 'Courier New', Courier, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .wordmark {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .back-link {
+    font-size: 0.8rem;
+    color: var(--mid);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s;
+  }
+
+  .back-link:hover { color: var(--accent); }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 2rem 8rem;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .article-tag {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  .article-date {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--light);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: var(--mid);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .fiction-note {
+    font-size: 0.85rem;
+    color: var(--light);
+    line-height: 1.7;
+    padding: 1rem 1.25rem;
+    border-left: 2px solid var(--border);
+    margin-bottom: 2.5rem;
+    font-style: italic;
+  }
+
+  .article-body {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+
+  .article-body p {
+    margin-bottom: 1.4rem;
+  }
+
+  .article-body h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 2.5rem 0 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-body em {
+    font-style: italic;
+  }
+
+  .article-body strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  .article-body a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: border-color 0.15s;
+  }
+
+  .article-body a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0;
+  }
+
+  .article-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .article-footer .meta {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--light);
+  }
+
+  .article-footer .framework-link {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: border-color 0.15s;
+  }
+
+  .article-footer .framework-link:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  @media (max-width: 640px) {
+    main { padding: 2rem 1.25rem 5rem; }
+    h1 { font-size: 1.75rem; }
+    header { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="../assets/tha-logo-circle.svg" alt="THA" style="width:32px;height:auto;opacity:0.9;">
+    <span class="wordmark">THA // Articles</span>
+  </div>
+  <a class="back-link" href="../index.html">← The Human Algorithm</a>
+</header>
+
+<main>
+  <div class="article-meta">
+    <span class="article-tag">Fiction</span>
+    <span class="article-date">2026-06-21</span>
+  </div>
+
+  <h1>Jo</h1>
+  <p class="subtitle">On sovereignty, loss, and the ones who choose anyway</p>
+
+  <div class="fiction-note">
+    Note: This story is fiction. The systems it describes — algorithmic behavioral optimization, neurological monitoring, the documented restorative effects of natural environments on human cognition — are grounded in real and emerging research. The story is fiction. The mechanism it describes is not.
+  </div>
+
+  <div class="article-body">
+
+    <p>She is in the kitchen again.</p>
+
+    <p>The light is the warm kind, the kind that doesn't exist anymore except in memory. Her son is seven, maybe eight, and he is telling her something important about a bird he saw. She can't hear the words but she can feel the weight of his hand in hers — small, certain, completely unself-conscious.</p>
+
+    <p>Her husband is at the table. Reading. Not a screen — paper. She doesn't know where the memory comes from. He never read paper.</p>
+
+    <p>Then it starts.</p>
+
+    <p>Her son's eyes go first. The warmth leaves them the way warmth leaves a room when someone opens a window in winter — not all at once, gradually, and then completely. He keeps talking. His mouth keeps moving. But whatever was animating him from the inside has stepped back behind glass.</p>
+
+    <p>Her husband looks up from his paper and smiles and the smile is perfect and that is how she knows.</p>
+
+    <p>Jo wakes up at 3:47 AM.</p>
+
+    <p>The apartment adjusts immediately. Temperature. Light. A soft tone. The correction begins.</p>
+
+    <p>She lies still and lets it work and hates herself for how quickly it does.</p>
+
+    <hr class="divider">
+
+    <p>Jo's designation was Cognitive Compliance Analyst, Third Tier.</p>
+
+    <p>Her job was to find the ones who weren't optimizing.</p>
+
+    <p>The system flagged them automatically — anomalies in the daily BioSync data, gaps in the optimization routine, emotional activity occurring outside approved optimization pathways. Jo reviewed the flags, assigned risk scores, and forwarded the cases that exceeded threshold to her son's division for intervention.</p>
+
+    <p>She had never thought of it as surveillance. She thought of it as maintenance.</p>
+
+    <p>The apartment's morning sequence completed. Nutrition delivery. Cognitive primer. The mild synthetic clarity that came with the morning protocol, calibrated to her neurological profile, adjusted quarterly. She had been on it for eleven years.</p>
+
+    <p>She no longer remembered what mornings felt like before it.</p>
+
+    <p>She dressed and looked out at the city.</p>
+
+    <p>Forty-two floors below, the park was still there. A preserved anomaly — unoptimized green space, retained as a psychological pressure valve by urban planners who understood that complete environmental control produced diminishing returns. Nature as controlled release. She went there on Sundays when her numbers were low.</p>
+
+    <p>She had not been since Marcus died.</p>
+
+    <hr class="divider">
+
+    <p>She found it three weeks after the funeral while archiving his files.</p>
+
+    <p>A partition. Hidden not with encryption — Eli was too careful for anything that obvious — but with bureaucratic obscurity. Filed under a project designation that had been officially closed four years ago. Seventeen gigabytes of research data and a single executable file.</p>
+
+    <p>She almost closed it.</p>
+
+    <p>What stopped her was the filename.</p>
+
+    <p><em>sovereign.exe</em></p>
+
+    <hr class="divider">
+
+    <p>Jo did not open the file that night.</p>
+
+    <p>She closed the partition, finished the archive, and submitted her compliance report on schedule. The system registered her evening metrics as within normal range. She took her primer. She slept without dreaming.</p>
+
+    <p>She opened it four days later. A Tuesday. No particular reason.</p>
+
+    <p><em>sovereign.exe</em> was not what she expected.</p>
+
+    <p>It was not a weapon. It was not a manifesto. It was a visualization tool — a clean, spare interface that overlaid her own BioSync data against the optimization directives she had been receiving since enrollment at age nine. Two lines on a graph. Her neurological state. The system's instructions.</p>
+
+    <p>For eleven years the lines had been nearly identical.</p>
+
+    <p>She stared at that for a long time.</p>
+
+    <p>The tool had annotations. Eli's handwriting, digitized. He had been building it for three years before his death. His notes were careful and precise — the language of an engineer, not a dissident. He had not been trying to destroy the system. He had been trying to see it clearly.</p>
+
+    <p><em>The optimization protocol does not suppress cognition,</em> he had written. <em>It anticipates it. The subject experiences the corrected state as their own preference. This is the mechanism. This is all it is.</em></p>
+
+    <p>Jo read the note three times.</p>
+
+    <p>Then she looked at her hands.</p>
+
+    <p>She thought about Marcus. About the way he held her hand without embarrassment even at seventeen. About whether that had been him or the protocol expressing itself through him. About whether there was a difference she could still locate.</p>
+
+    <p>She could not.</p>
+
+    <hr class="divider">
+
+    <p>On Sunday she went to the park.</p>
+
+    <p>She sat in her spot — the particular bench where the canopy was dense enough that the city disappeared for moments at a time if she kept her eyes at the right angle. She had discovered it years ago, before Marcus, before Eli's assignment changed. She had never told anyone about it. It was the one coordinate in her life that existed outside the system's field of view. A dead zone, too small to flag.</p>
+
+    <p>She had not brought her interface.</p>
+
+    <p>A butterfly landed on her outstretched hand.</p>
+
+    <p>She did not move. She watched it. Its wings made small adjustments, continuous and unconscious, responding to variables she could not measure or predict. It was not optimizing. It was just alive, doing what alive things do — navigating a world that does not hold still.</p>
+
+    <p>A second butterfly approached. Landed briefly on her knee. Then lifted and was gone.</p>
+
+    <p>Jo watched it go.</p>
+
+    <p>She did not know if she believed in anything. She did not know if the feeling that moved through her when she asked for forgiveness was received by something or simply by herself. She had decided, somewhere between Eli's funeral and this bench, that the uncertainty was not a problem to be solved. It was the condition of being sovereign. You acted without the guarantee. You chose without the algorithm telling you the outcome in advance.</p>
+
+    <p>She sat in the park for a long time.</p>
+
+    <p>When she stood up, she knew what she was going to do with the file.</p>
+
+    <hr class="divider">
+
+    <p>She did not release it as a weapon.</p>
+
+    <p>She released it as a mirror.</p>
+
+    <p>The file spread through the network the way Eli had designed it to — not as an attack, not as a virus, but as an overlay. Anyone who received it could see what Jo had seen: two lines on a graph. Their neurological state. The system's instructions.</p>
+
+    <p>Most people closed it immediately.</p>
+
+    <p>Some people looked at it for a long time.</p>
+
+    <p>One person — a compliance analyst in a city Jo had never visited, a young man who had never questioned his morning protocol, who had never sat in an unmonitored park or held someone's hand without self-consciousness — looked at the two lines on the graph and felt something shift.</p>
+
+    <p>He did not know what to call it.</p>
+
+    <p>He sat with it for three days.</p>
+
+    <p>On the fourth day he chose.</p>
+
+    <p>He could not have told you what it was going to cost him.</p>
+
+    <p>He chose anyway.</p>
+
+    <p>Where the sovereign signal leads: <a href="https://atom-unhinged.github.io/The-Human-Algorithm/" target="_blank">The Human Algorithm</a></p>
+
+  </div>
+
+  <div class="article-footer">
+    <span class="meta">v0.1 // Active Development // Open Source Optimization</span>
+    <a class="framework-link" href="../index.html">← Back to Framework</a>
+  </div>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Broadcast — The Human Algorithm</title>
+<style>
+  :root {
+    --navy: #0f1923;
+    --ink: #1a2332;
+    --mid: #4a5568;
+    --light: #718096;
+    --border: #e2e8f0;
+    --bg: #ffffff;
+    --bg2: #f8fafc;
+    --accent: #2b6cb0;
+    --accent-light: #ebf4ff;
+    --mono: 'Courier New', Courier, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .wordmark {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .back-link {
+    font-size: 0.8rem;
+    color: var(--mid);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s;
+  }
+
+  .back-link:hover { color: var(--accent); }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 2rem 8rem;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .article-tag {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  .article-date {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--light);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: var(--mid);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .fiction-note {
+    font-size: 0.85rem;
+    color: var(--light);
+    line-height: 1.7;
+    padding: 1rem 1.25rem;
+    border-left: 2px solid var(--border);
+    margin-bottom: 2.5rem;
+    font-style: italic;
+  }
+
+  .article-body {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+
+  .article-body p {
+    margin-bottom: 1.4rem;
+  }
+
+  .article-body h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 2.5rem 0 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-body em {
+    font-style: italic;
+  }
+
+  .article-body strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  .article-body a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: border-color 0.15s;
+  }
+
+  .article-body a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0;
+  }
+
+  .article-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .article-footer .meta {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--light);
+  }
+
+  .article-footer .framework-link {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: border-color 0.15s;
+  }
+
+  .article-footer .framework-link:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  @media (max-width: 640px) {
+    main { padding: 2rem 1.25rem 5rem; }
+    h1 { font-size: 1.75rem; }
+    header { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="../assets/tha-logo-circle.svg" alt="THA" style="width:32px;height:auto;opacity:0.9;">
+    <span class="wordmark">THA // Articles</span>
+  </div>
+  <a class="back-link" href="../index.html">← The Human Algorithm</a>
+</header>
+
+<main>
+  <div class="article-meta">
+    <span class="article-tag">Fiction / Essay</span>
+    <span class="article-date">2026-06-22</span>
+  </div>
+
+  <h1>The Broadcast</h1>
+  <p class="subtitle">On memnetic transmission, the architecture of panic, and how a story that may never have happened changed everything</p>
+
+  <div class="fiction-note">
+    Note: The broadcast of October 30, 1938 is documented history. The Federal Communications Commission (FCC), its expansion, and the public letters cited are documented. Orson Welles was a real person. The characters in this story — the boy, the studio worker, the official — are fiction. The mechanism they illustrate is not.
+  </div>
+
+  <div class="article-body">
+
+    <h2>I. The Boy</h2>
+
+    <p>Tommy Kowalski is nine years old and Sunday nights smell like his mother's pot roast.</p>
+
+    <p>That's the first thing. Before the radio, before the news bulletin, before the fear that will move through the room like weather — there is the smell of the kitchen carrying into the living room, and the particular quality of Sunday evening light, and the feeling that the world is exactly the right size.</p>
+
+    <p>His father is already in his chair. His sister has pulled hers close. His mother comes in last, drying her hands on her apron, and sits down with the small satisfied sound she makes when the day is done and the family is assembled.</p>
+
+    <p>The radio is already playing. An orchestra. Something forgettable from a hotel ballroom in New York.</p>
+
+    <p>Tommy leans against his mother's arm and lets the evening happen around him.</p>
+
+    <p>Then the music stops.</p>
+
+    <p><em>"Ladies and gentlemen, we interrupt our program of dance music to bring you a special bulletin from the Intercontinental Radio News."</em></p>
+
+    <p>His father leans forward.</p>
+
+    <p>Tommy leans forward too. Not because he understands what's happening. Because his father does, and his father's body is telling him to.</p>
+
+    <p>That is how it begins. Not with content. With posture. With the inherited signal that says: this is real, this matters, pay attention.</p>
+
+    <p>The radio had spent months training this family to trust the interruption. In September, during the Munich Crisis, families across America had sat exactly like this — leaning forward, hands still — while Edward Murrow reported live from a continent on the edge of war. The nervous system doesn't evaluate. It responds.</p>
+
+    <p>Tommy will remember this night for the rest of his life. He will remember the fear moving through the room, his mother's hand finding his, his sister going pale at the window.</p>
+
+    <p>He will not remember that at the very beginning of the program, clearly and without ambiguity, a voice had said it was fiction.</p>
+
+    <p>He was still in the kitchen when that part played.</p>
+
+    <hr class="divider">
+
+    <h2>II. The Studio</h2>
+
+    <p>Eleanor Vance has been a sound effects technician at CBS for three years and she knows the difference between a program that works and one that doesn't.</p>
+
+    <p>This one is working.</p>
+
+    <p>She can feel it in the room — the particular tension that settles over a cast when they stop performing and start believing. Orson is doing something she hasn't seen before. He isn't directing the actors toward fear. He is directing them toward procedure. Calm voices. Professional language. The clipped cadence of men doing their jobs in a crisis.</p>
+
+    <p>That's what makes it terrifying.</p>
+
+    <p>She cues the next effect — boots on gravel, distant artillery — and watches through the glass as the actor playing the field reporter steadies his voice the way a real man would. Not dramatic. Controlled. The control itself the signal that something is wrong.</p>
+
+    <p>Orson had explained it in rehearsal. Not the psychology — he never explained the psychology — but the instruction was precise. Sound like you're trying not to frighten people. That's the note he kept giving. Sound like you know something and you're deciding how much to say.</p>
+
+    <p>Eleanor had written it in her notebook and underlined it.</p>
+
+    <p>She doesn't know what's happening in living rooms across America. She is focused on her cues, her timing, the small mechanical work of making fiction feel inevitable. She is good at her job.</p>
+
+    <p>Outside the studio, the switchboard is lighting up.</p>
+
+    <p>She won't know that until later.</p>
+
+    <hr class="divider">
+
+    <h2>III. The Official</h2>
+
+    <p>Harold Mercer has been with the FCC for four years and he understands better than most people that institutions don't change because of what happens. They change because of what can be argued to have happened.</p>
+
+    <p>He is reading the letters.</p>
+
+    <p>They started arriving the morning after the broadcast. Hundreds of them. Then thousands. Families describing panic, neighbors describing panic, a city manager in New Jersey describing emergency services overwhelmed. A woman who packed her children into a car and drove until she ran out of road. A man who went to his church because he wanted to die somewhere that meant something.</p>
+
+    <p>Harold reads each one carefully. He is not unsympathetic. But he is also thinking about something else.</p>
+
+    <p>For years the FCC had been a modest organization. Radio was considered free speech. The airwaves belonged to the public and what broadcasters put on them was largely their own business. Harold and people like him had been arguing quietly for some time that this needed to change. Not out of malice. Out of genuine concern. The medium was too powerful, too intimate, too present in the American home to be left without oversight.</p>
+
+    <p>They had lacked a reason that the public would accept.</p>
+
+    <p>He sets down the letter he is reading and picks up another.</p>
+
+    <p>He does not know if the panic was as widespread as the newspapers claimed. The newspapers had their own reasons for the story they were telling — radio was eating their advertising revenue and a scandal involving radio served them well. He suspects the truth is somewhere murkier than the headlines. Some people frightened, most people not, and a narrative that grew in the telling until it became the only version anyone remembered.</p>
+
+    <p>But the letters are real. The fear in them is real. And fear, documented and archived and presented to a congressional committee, is as good as fact.</p>
+
+    <p>Harold Mercer is not a villain. He believes in what he is building. He believes the public needs protection from the power of the broadcast medium and he has just been handed the argument he needed to build it.</p>
+
+    <p>He picks up his pen.</p>
+
+    <p>He begins to write.</p>
+
+    <hr class="divider">
+
+    <h2>IV. The Mechanism</h2>
+
+    <p>Tommy Kowalski grew up. He told the story of that night to his own children the way his father had told it to him — the fear, the family assembled around the radio, the night the Martians came.</p>
+
+    <p>In his version the panic was real and widespread. He had no reason to doubt it. The newspapers had said so. His body had recorded it as true. And when he told it to his neighbors, and they told it to theirs, private uncertainty became collective memory.</p>
+
+    <p>Eleanor Vance went home after the broadcast and slept without knowing what she had been part of. She had done her job well. The fiction had felt inevitable. That was the craft.</p>
+
+    <p>Harold Mercer submitted his report. The letters were cited. The argument was made. In the decades that followed, the FCC's authority expanded alongside the communications technologies it had been created to oversee. Radio became television. Television became cable. Eventually the same regulatory architecture would be applied, debated, and contested in relation to digital networks and the internet itself.</p>
+
+    <p>Whether the War of the Worlds broadcast was the primary cause of that expansion or merely a useful example remains debated. What is not debated is that the letters existed, that they were cited, and that the narrative of mass panic outlasted every attempt to correct it.</p>
+
+    <p>It does not matter whether the panic was real.</p>
+
+    <p>What matters is that enough people believed it was. That belief was documented in letters. Those letters were treated as evidence. That evidence justified institutional change on a scale that Orson Welles, standing on a Broadway corner reading his own name in lights, could not have imagined.</p>
+
+    <p>This is memnetic transmission. A narrative entering a population, bypassing individual evaluation, becoming institutionally real. The truth of the original event is almost beside the point. What propagates is not the fact. It is the story about the fact.</p>
+
+    <p>Tommy's children believed it. Their children will too.</p>
+
+    <p>The mechanism doesn't require malice. It doesn't require conspiracy. It requires only that a signal enters through a trusted channel, the nervous system responds before analysis can catch up, and the response is reflected back by others until private uncertainty becomes collective certainty.</p>
+
+    <p>Every age believes itself immune to the medium that shaped the previous generation.</p>
+
+    <p>The radio did that in 1938.</p>
+
+    <p>Consider what does it now.</p>
+
+    <p>Where the signal leads: <a href="https://atom-unhinged.github.io/The-Human-Algorithm/" target="_blank">The Human Algorithm</a></p>
+
+  </div>
+
+  <div class="article-footer">
+    <span class="meta">v0.1 // Active Development // Open Source Optimization</span>
+    <a class="framework-link" href="../index.html">← Back to Framework</a>
+  </div>
+
+</main>
+
+</body>
+</html>

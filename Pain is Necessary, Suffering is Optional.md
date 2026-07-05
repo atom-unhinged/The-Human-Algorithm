@@ -6,4 +6,6 @@ Rumination — the loop that runs past the point of useful signal — is address
 
 [[The Human Algorithm]] is designed to process pain as signal and interrupt suffering as noise — returning the system to a functional state. This is the intent of the framework, not a guaranteed outcome.
 
+[[Constructive Displacement]] extends this same non-escalation logic outward — from how a system processes its own signal to how it responds to harm from outside it.
+
 A system that processes pain honestly and interrupts suffering tends toward [[Peace is the Protocol]] — not as the absence of pain, but as the state where pain serves its function without becoming a permanent operating condition.

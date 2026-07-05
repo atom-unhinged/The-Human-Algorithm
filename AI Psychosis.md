@@ -9,3 +9,5 @@ The conditions that produce it: emotional dependence on AI interaction, absence 
 [[Epistemic Hygiene]] is the primary prevention. [[Signal vs Slop]] names the environment that makes it likely. [[The New Literacy]] is the long-term solution — teaching people to interact with AI as a tool that requires verification, not an oracle that provides truth.
 
 The antidote is not less AI use. It is better AI use.
+
+A related failure mode — a system's output experienced as one's own preference — dramatized: Jo — https://atom-unhinged.github.io/The-Human-Algorithm/Articles/2026-06-21-jo.html

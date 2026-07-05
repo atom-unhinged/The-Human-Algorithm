@@ -66,6 +66,7 @@ Recorded as observed pairs. Not yet classified into types — six examples isn't
 - RLHF ↔ RLAiF
 - Sovereign Signal ↔ Sovereignty Principle
 - Sovereignty Principle ↔ Trustless Architecture
+- Intentionality Architecture ↔ Constructive Displacement
 
 Two patterns noticed, held as observations rather than rules:
 - **Declared relationship → distinction, reliably.** Every pair where a note explicitly says "X is an application of Y" or "X is one resolution to Y" turned out distinct on inspection (5/5). Absence of a declared relationship predicts nothing either way (one merge, one non-merge observed) — a heuristic for where to look closely, not evidence in the review itself.

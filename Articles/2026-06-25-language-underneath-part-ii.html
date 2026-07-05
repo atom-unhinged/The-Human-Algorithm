@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Language Underneath, Part II — The Human Algorithm</title>
+<style>
+  :root {
+    --navy: #0f1923;
+    --ink: #1a2332;
+    --mid: #4a5568;
+    --light: #718096;
+    --border: #e2e8f0;
+    --bg: #ffffff;
+    --bg2: #f8fafc;
+    --accent: #2b6cb0;
+    --accent-light: #ebf4ff;
+    --mono: 'Courier New', Courier, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .wordmark {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .back-link {
+    font-size: 0.8rem;
+    color: var(--mid);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.15s;
+  }
+
+  .back-link:hover { color: var(--accent); }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 4rem 2rem 8rem;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .article-tag {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  .article-date {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--light);
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: var(--mid);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .article-body {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--ink);
+  }
+
+  .article-body p {
+    margin-bottom: 1.4rem;
+  }
+
+  .article-body em {
+    font-style: italic;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem auto;
+    width: 100%;
+  }
+
+  .article-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .article-footer .meta {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--light);
+  }
+
+  .article-footer .framework-link {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: border-color 0.15s;
+  }
+
+  .article-footer .framework-link:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  @media (min-width: 1024px) {
+    main { max-width: 720px; }
+    .article-body { font-size: 1.1rem; }
+  }
+
+  @media (max-width: 640px) {
+    main { padding: 2rem 1.25rem 5rem; }
+    h1 { font-size: 2rem; }
+    header { padding: 1rem; }
+  }
+
+  @media (max-width: 900px) and (orientation: landscape) {
+    main { max-width: 90%; padding: 2rem 3rem 5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="../assets/tha-logo-circle.svg" alt="THA" style="width:32px;height:auto;opacity:0.9;">
+    <span class="wordmark">THA // Articles</span>
+  </div>
+  <a class="back-link" href="../index.html">← The Human Algorithm</a>
+</header>
+
+<main>
+  <div class="article-meta">
+    <span class="article-tag">Literary Fiction / Short Story</span>
+    <span class="article-date">2026-06-25</span>
+  </div>
+
+  <h1>The Language Underneath, Part II</h1>
+  <p class="subtitle">For Moon Boots.</p>
+
+  <div class="article-body">
+
+    <p>She wore the boots inside the house. Big white ones, made for snow that never touched our floors, and she stomped in them from the kitchen to the window and back like she was putting out small fires only she could see. The first time I saw her do it I laughed so hard I had to sit down, and she looked at me like I'd finally understood something important about her, which I suppose I had.</p>
+
+    <p>"Moon Boots," I said, and she lit up like I'd handed her a crown.</p>
+
+    <p>She called me Amadeus. Never told me why, not really, though once she said it was because I looked like someone who heard music other people couldn't. Some days I was a prince to her. She'd tell me, straight-faced, that her father was Prince Andrew, that he was probably King Andrew by now, and I'd nod and ask if that made her a princess, and she'd say obviously, and go back to stirring whatever she was burning on the stove. Other days, rarer, worse days, I was the devil. She never explained that one and I never asked her to.</p>
+
+    <hr class="divider">
+
+    <p>I loved her fragile skull.</p>
+
+    <p>I don't know how else to say it. She was tiny, built like something that shouldn't survive a strong wind, and I used to lie there at night with her head on my chest and feel the actual shape of her skull under my palm when I stroked her hair, and think: this is the whole world, right here, in one hand.</p>
+
+    <p>She cooked for me constantly and it was never good. Marshmallows melted into yogurt with granola dumped on top like she was building a monument. I made a face once, just a small one, and she caught it instantly.</p>
+
+    <p>"What, you don't trust my cooking? I'm à homemaker too, you know."</p>
+
+    <p>The little French lilt she put on "à" for no reason at all. I ate the whole bowl.</p>
+
+    <hr class="divider">
+
+    <p>We met young. Young enough that neither of us remembers a version of ourselves that existed before the other one did. Instant, the way people say and mean less than they think. I don't mean it that way. I mean there was no gap. One day there was a life without her in it and I have no memory of that life at all.</p>
+
+    <p>Something happened after high school. I was never given the whole shape of it, only pieces, and some of the pieces didn't fit together and some of them fit too well. She got fuller, was the word I used for years before I had a better one. Fuller, stranger, more herself and less herself at the same time, like a photograph slowly overexposing. It didn't announce itself. It just kept happening, a little more every season, and by the time I understood it had a name I'd already loved her through several other names for it.</p>
+
+    <hr class="divider">
+
+    <p>She talked to herself. Not muttering, full conversations, both sides, sometimes getting genuinely furious at whoever she was on the other end of it. I'd walk in and she'd be mid-argument with someone who wasn't there, losing, apparently, because she'd stomp one moon boot down hard and say something like "well maybe I don't want to hear that right now" to absolutely no one.</p>
+
+    <p>She called me Marshall once, out of nowhere, and asked if Marshall looked like Eminem.</p>
+
+    <p>"Do I look like Eminem?"</p>
+
+    <p>"A little," she said, and went back to whatever she'd been doing, satisfied, like she'd settled something important.</p>
+
+    <p>When I got frustrated with her, really frustrated, she had one move that ended every argument instantly.</p>
+
+    <p>"Well, it's your fault, because if you're my soulmate you should be rich."</p>
+
+    <p>I never had a response to that. I still don't.</p>
+
+    <hr class="divider">
+
+    <p>The candle wax down the sink happened twice.</p>
+
+    <p>The second time I found the drain clogged solid, a little white river frozen mid-pour, and I asked her, more tired than angry, whether she'd been doing magic spells in the sink again.</p>
+
+    <p>Her whole face changed. Lit up like I'd finally, finally seen her.</p>
+
+    <p>"Yes," she said. "I was."</p>
+
+    <p>Hands pressed together like a small prayer. Genuinely happy to be caught, because being caught meant being known.</p>
+
+    <p>She'd twirl sometimes, in the middle of a room, arms out, like she was casting something. If she got scared of a corner of the house, a shadow, whatever it was that afternoon, she'd spit at it. Actually spit, at the wall, small and fierce, a little bull squaring up to something enormous. I never once saw the thing she was fighting. I only ever saw her fight it.</p>
+
+    <p>"What's wrong with being a bowl in a china shop," she said to me once, entirely seriously, after knocking three glasses off the counter with one elbow, and I didn't correct her. I have never once corrected her. She wasn't wrong. She was exactly that. Something delicate, surrounded by other delicate things, breaking a little of everything around her without ever meaning to, and somehow still the least breakable thing in the room.</p>
+
+    <hr class="divider">
+
+    <p>There is one morning I return to more than any other.</p>
+
+    <p>Years in, deep in the part where the good days had gotten rare enough that I'd started quietly counting them, I woke up to a clean house. Dishes done. Everything in its place, the way it never was, the way I did it myself most days without thinking about it because thinking about it made it sadder.</p>
+
+    <p>She was already up. She came over while I was still working out what was different, kissed my cheek, and said the only two words I'd hear from her in that particular order in seven years.</p>
+
+    <p>"I love you."</p>
+
+    <p>That was all. She went back to the kitchen like she hadn't said anything unusual.</p>
+
+    <p>I never asked her why she didn't say it more. When we made love, which was often, which always found its way back to happening no matter how far away she'd been that week, she never said it then either. She'd whisper something else instead, always the same thing, right at the end, her mouth against my collarbone.</p>
+
+    <p>"It's beautiful."</p>
+
+    <p>I took what she could give me. I never once felt shorted by it.</p>
+
+    <hr class="divider">
+
+    <p>Her mother died when she was seven. Fell down a flight of stairs, struck her head, and that was the whole event, delivered to a seven-year-old the way adults deliver unsurvivable things to children, which is badly, because there is no good way.</p>
+
+    <p>I only ever got this in pieces, and never from her directly, not really. It surfaced during the bad stretches, unstitched from any order, present tense when it should have been past.</p>
+
+    <p>"She's at the bottom," she said to me once, out of absolutely nowhere, staring at our own staircase like it had done something to her. "She's still at the bottom, nobody's picked her up."</p>
+
+    <p>Another time, brushing her hair, she went very still under my hands and said, "I counted the stairs after. There's fourteen. I still don't know why I counted them," and then asked me, completely normal again, whether we had any marshmallows left.</p>
+
+    <p>I stopped trying to assemble it into a story. It wasn't a story to her. It was just there, all the time, underneath everything else, the way a foundation is underneath a house whether or not anyone in the house ever looks at it.</p>
+
+    <hr class="divider">
+
+    <p>Her sister Emily started coming around more as things got worse. Watching her watch us was its own kind of hard. Emily loved her completely and had run out of ways to help a long time before I met her, and I think some part of her resented that I hadn't run out yet, and some other part of her needed badly for someone not to have.</p>
+
+    <p>"You can't fix her," Emily said to me once, quietly, while Moon Boots was in the other room having a conversation with someone who wasn't in it.</p>
+
+    <p>"I'm not trying to fix her."</p>
+
+    <p>"Then what are you doing."</p>
+
+    <p>I didn't have an answer that wouldn't have sounded insane out loud. So I didn't give her one.</p>
+
+    <hr class="divider">
+
+    <p>I want to be honest about what I did, because it would be easy to tell this part of it like something noble happened, and it wasn't only that.</p>
+
+    <p>I used reverse psychology on her. Told her not to do things I actually wanted her to do, so she'd do them out of spite, because spite moved her in ways that asking never did. I'm not proud of it. I told myself it was the only tool that worked and maybe it was, but I want it on the record that I chose it, deliberately, more than once, and called it love because I needed it to be love and not just control with better manners.</p>
+
+    <p>I started reading. Everything I could find on what might be happening underneath her, structurally, some pattern beneath the pattern that was taking her further away a little more each season. I wasn't a doctor. I wasn't anything, really, except someone who couldn't accept that the only options on the table were manage it or lose her to it slowly. I kept thinking there had to be a language underneath the one she'd stopped being able to speak in — something older than words, something the words were only ever a translation of — and if I could find it, even a fragment of it, I could meet her there instead of waiting at the door for her to find her way back out.</p>
+
+    <p>That's when I started with the compounds.</p>
+
+    <hr class="divider">
+
+    <p>I want to say this the way it actually happened, not the way it would sound if I made it sound wiser than it was.</p>
+
+    <p>It started reasonably. It's not a secret anymore that certain things, taken carefully, in the right hands, under the right conditions, can open something in a person that ordinary states can't reach — there's real research behind that now, real doctors, real rooms with real supervision. I told myself I was doing a version of that. Careful. Classy about it, even, at first. A guided thing, done at night, done alone, done with intention.</p>
+
+    <p>I went further than that. I know I did. I stopped waiting for the careful version to show me anything and started chasing the parts past it, the parts nobody supervises, because Huxley wrote about doors and I decided I was allowed to go looking for the ones he didn't open.</p>
+
+    <p>There was a night I went further out than I'd ever gone. I remember standing — or something that felt like standing — at what I can only call an edge. The edge of the unformed realms. Everything on the other side of it was still becoming something, not yet a thing, just the pulling-itself-out of it, formless tipping into formed, the way a word arrives half a second before you know what it's going to be. Endless on one side. Ending, somehow, on the other. I watched it happen for what might have been a minute and might have been a night.</p>
+
+    <p>I thought, for one entire heartbeat, that I understood her. Not the diagnosis. Her. The place she went to. I thought I was standing in the room she'd been locked in for years, finally, and if I just stayed a little longer I could bring back the key.</p>
+
+    <p>I don't know if that was real. I have never known if that was real. That's the part I can't hand you cleanly, because I still don't have it cleanly myself.</p>
+
+    <hr class="divider">
+
+    <p>Emily found me two mornings later. I'd lost the days between without noticing they'd gone, which should have frightened me more than it did at the time.</p>
+
+    <p>"You scared the hell out of me," she said. She wasn't performing anger. She was just tired, and scared, in the specific way people get when they've already lost someone once to something they couldn't stop and are watching it start again in a different person.</p>
+
+    <p>"I'm fine."</p>
+
+    <p>"You're not fine. You're doing exactly what she does. You know that, right? You're doing the same thing to yourself that's happening to her, except you're choosing it."</p>
+
+    <p>I didn't have an answer for that one either. I should have. I think about that a lot now, the fact that I didn't.</p>
+
+    <hr class="divider">
+
+    <p>The good days kept shrinking. Not gradually, the way you'd expect — it wasn't a straight line down. It was days of real clarity, so much clarity it startled me, followed by nothing, sometimes for a week, and then clarity again for an afternoon, gone by evening. Near the end I stopped being able to predict which version of her I'd find in a given room. I'd walk in braced for either one. Some mornings I'd catch her stomping around in the moon boots, alive, furious about something invisible, mine completely. Other mornings I'd find her standing at the window, not moving, and I'd say her name and get nothing back at all, and I'd stand beside her and look out at whatever she was looking at and see nothing there and wonder, every single time, if that meant there was nothing to see or just that I couldn't see it.</p>
+
+    <p>I kept going back to the edge. I told myself it was for her. I still believe that was true. I also know that somewhere in there it stopped being only that, and became the only place I felt like I was doing something instead of just watching, and I couldn't tell the difference anymore between helping her and needing, myself, badly, to feel like I hadn't given up.</p>
+
+    <hr class="divider">
+
+    <p>I don't remember the last conversation I had with her before things changed for me too. I've tried. There's a version I've told myself so many times I no longer trust it, which is its own kind of answer.</p>
+
+    <p>What I have instead is this. A window. Not our window — I know that now, though for a long time I didn't, or didn't let myself. A different glass, thicker, the kind that doesn't open, in a room with a bed bolted to the floor and a door that only unlocks from one side.</p>
+
+    <p>They tell me it's been three years.</p>
+
+    <p>I don't always believe them. Some days I do.</p>
+
+    <hr class="divider">
+
+    <p>I'm standing at the window now. It's evening, the good kind, the sky doing the thing it does right before it commits to dark, and there's a woman outside on the lawn in boots too big for the season, stomping a slow circle in the grass like she's putting out small fires only she can see.</p>
+
+    <p>I'm laughing. I can feel myself laughing, soft, the kind that doesn't need anyone else to hear it to be real.</p>
+
+    <p>"Moon Boots," I say, to the glass, to her, to whoever is close enough on the other side of it to be called that.</p>
+
+    <p>She looks up. She always looks up. She lifts one hand the way she used to, small wave, private joke, ours.</p>
+
+    <p>I love her fragile skull.</p>
+
+    <p>I don't know if she's there. I have stopped needing to know. Some things you love past the point where the question still matters, and I think — I have come to think, standing here, most evenings, at this glass — that this is what the edge was always going to cost. Not an answer. Just the willingness to keep waving back.</p>
+
+  </div>
+
+  <div class="article-footer">
+    <span class="meta">v1.0 // The Human Algorithm</span>
+    <a class="framework-link" href="../index.html">← Back to Framework</a>
+  </div>
+
+</main>
+
+</body>
+</html>

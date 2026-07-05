@@ -62,7 +62,7 @@ Anyone who wants to think more clearly, interact with AI deliberately, filter si
 - **Practice** — AI as Cognitive Scaffold, Intentionality Architecture, Manifestation as Technology, Microdosing as Protocol, The Physical Layer, The Butterfly Effect as Practice
 - **Principles** — Epistemic Hygiene, Signal vs Slop, Sovereign Signal, The Sovereignty Principle, Pain is Necessary, Suffering is Optional, Peace is the Protocol, Constructive Displacement
 - **Context** — The Summer Dragon Problem, Trustless Architecture, AI Psychosis, Premature Certainty, The New Literacy, The Collective Layer, Hypnosis as Protocol
-- **Tools** — The Tools, The Optimization Protocol — Framework
+- **Tools** — The Tools, The Optimization Protocol
 
 Browse the full framework: [atom-unhinged.github.io/The-Human-Algorithm](https://atom-unhinged.github.io/The-Human-Algorithm/)
 

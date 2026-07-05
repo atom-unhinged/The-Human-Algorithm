@@ -10,6 +10,6 @@ Personal practice note: The author developed a progressive relaxation induction 
 
 Clinical applications — surgery, pain management, childbirth — exist and are documented. They require licensed practitioners. This note documents the theory and personal framework only. Clinical use requires proper training and oversight.
 
-For the self-directed personal optimization protocol, see [[The Optimization Protocol — Framework]].
+For the self-directed personal optimization protocol, see [[The Optimization Protocol]].
 
 See also: [[NLP2]], [[Manifestation as Technology]], [[The Physical Layer]]

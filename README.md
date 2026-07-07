@@ -79,6 +79,7 @@ Essays and fiction that branch from the core framework:
 - [The Broadcast](https://adamwarren3.github.io/THA/Articles/2026-06-22-the-broadcast.html) — On memnetic transmission and the architecture of panic.
 - [BEN](https://adamwarren3.github.io/THA/Articles/2026-06-23-ben.html) — 🌼
 - [No God But..](https://adamwarren3.github.io/THA/Articles/2026-06-24-no-god-but.html) — On dogma as memnetic infection, and the noise between us and the source.
+- [The Language Underneath, Part II](https://adamwarren3.github.io/THA/Articles/2026-06-25-language-underneath-part-ii.html) — For Moon Boots. On loving something past the point where whether it's real stops being the question.
 
 ---
 

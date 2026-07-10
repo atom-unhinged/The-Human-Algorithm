@@ -1,4 +1,4 @@
-[[AI as Cognitive Scaffold|AI amplifies]] intention — good or bad. Undirected AI use doesn't produce neutral output, it produces noise at scale. The Linux kernel AI slop crisis is a documented case study: well-meaning or careless actors flooding a system with low-quality AI-generated input until the system breaks down.
+[[AI as Cognitive Scaffold|AI amplifies]] intention — good or bad. Undirected AI use doesn't produce neutral output, it produces noise at scale. The curl project's AI slop crisis is a documented case study: well-meaning or careless actors flooding the bug-bounty program with low-quality AI-generated submissions forced its maintainer to shut it down. The Linux kernel faced a milder version of the same pattern and resolved it through ordinary governance — a disclosure tag for AI-assisted contributions, not a breakdown.
 
 This is fundamentally an [[Epistemic Hygiene]] failure — treating unverified AI output as valid signal.
 

@@ -1,6 +1,6 @@
 Many major wisdom traditions converge on a similar output state: peace, non-harm, reduction of unnecessary conflict. The pattern is significant and worth taking seriously. Whether this represents universal convergence or selective reading of traditions that also sanctioned violence and conquest is a fair question. The pattern is real. The claim of universality is not fully defensible.
 
-What is defensible: peace as a systems concept. Minimum friction, maximum coherence, sustainable output. Conflict and domination are metabolically expensive — they require ongoing energy to initiate, maintain, and recover from. Systems that tend toward cooperation and low conflict tend to be more durable than those built on domination. This is observable historically, not just theoretically.
+What is defensible: peace as a systems concept. Minimum friction, maximum coherence, sustainable output. Conflict and domination are metabolically expensive — they require ongoing energy to initiate, maintain, and recover from. Systems that tend toward cooperation and low conflict may be more durable than those built on domination — a plausible reading of long-run system dynamics, though real counter-examples (long-lived empires built substantially on domination) mean this isn't a settled historical verdict, only a pattern worth taking seriously.
 
 Peace is not passive. It is a high-performance operating state — but one that has to be built and maintained, not one that arrives automatically.
 

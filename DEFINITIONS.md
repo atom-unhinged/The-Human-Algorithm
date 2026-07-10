@@ -18,7 +18,7 @@ The canonical source of meaning for THA's vocabulary. Each entry states what a t
 
 **Epistemic Hygiene** — Verifying sources, calibrating confidence, and refusing to treat unverified AI output as fact. → [[Epistemic Hygiene]]
 
-**Hypnosis as Protocol** — Suggestion delivered through guided induction, requiring trust and willingness rather than imposed — the cognitive-scale mechanism NLP² formalizes. → [[Hypnosis as Protocol]]
+**Hypnosis as Protocol** — Suggestion delivered through guided induction, requiring trust and willingness rather than imposed — the cognitive-scale mechanism NLP² formalizes. → [[Hypnosis as Protocol]] — *Working Model*
 
 **Intentionality Architecture** — Turning a vague want into a built system: target state, friction points removed, reinforcement in place. → [[Intentionality Architecture]]
 

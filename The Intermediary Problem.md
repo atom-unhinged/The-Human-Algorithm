@@ -8,4 +8,4 @@ The test is structural, not moral: Can the individual still reach the source dir
 
 [[Trustless Architecture]] is the engineering response at the systems layer. [[The Sovereignty Principle]] is the same response at the individual layer. [[Epistemic Hygiene]] is the audit practice that keeps delegation from hardening into dependence.
 
-The mechanism at population scale, dramatized: The Broadcast — https://atom-unhinged.github.io/The-Human-Algorithm/Articles/2026-06-22-the-broadcast.html
+The mechanism at population scale, dramatized: The Broadcast — https:/adamwarren3.github.io/THA/Articles/2026-06-22-the-broadcast.html

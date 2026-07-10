@@ -6,4 +6,4 @@ This is the guiding principle of [[The Human Algorithm]]. A single well-placed i
 
 [[Epistemic Hygiene|Understanding the system]] is the prerequisite. Precise intervention in a system you misunderstand produces unpredictable results — potentially counterproductive ones. 
 
-*The randomness isn't random if you understand the system.
+*Not predictable, but not blind either — some places in a system matter more than others, and understanding the system is what lets you tell the difference.

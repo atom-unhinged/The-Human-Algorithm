@@ -3,7 +3,7 @@ The premise: humans are running on inherited code. [[Memnetic]] infections, inst
 
 The Human Algorithm is the deprogramming and reprogramming protocol. Its inputs are truth, signal, [[Sovereign Signal|direct source connection]], [[Epistemic Hygiene|epistemic hygiene]], and sovereign intention.
 
-Its tools are [[AI as Cognitive Scaffold|AI as cognitive scaffold]],[[Trustless Architecture|trustless architecture]], [[NLP2|NLP²]] framework, [[Intentionality Architecture|intentionality architecture]], and the [[The Butterfly Effect as Practice|the butterfly effect as practice]]. 
+Its tools are [[AI as Cognitive Scaffold|AI as cognitive scaffold]], [[Trustless Architecture|trustless architecture]], [[NLP2|NLP²]] framework, [[Intentionality Architecture|intentionality architecture]], [[Constructive Displacement|constructive displacement]], and [[The Butterfly Effect as Practice|the butterfly effect as practice]].
 
 Its intended output is an individual moving toward maximum signal, minimum noise, in direct relationship with truth and consequence. Not self help. Not spirituality. Not technology. All three.
 

@@ -10,4 +10,4 @@ The conditions that produce it: emotional dependence on AI interaction, absence 
 
 The antidote is not less AI use. It is better AI use.
 
-A related failure mode — a system's output experienced as one's own preference — dramatized: Jo — https://atom-unhinged.github.io/The-Human-Algorithm/Articles/2026-06-21-jo.html
+A related failure mode — a system's output experienced as one's own preference — dramatized: Jo — https://adamwarren3.github.io/THA/Articles/2026-06-21-jo.html

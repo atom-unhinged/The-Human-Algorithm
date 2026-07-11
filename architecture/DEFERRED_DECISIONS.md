@@ -44,8 +44,8 @@ Choices consciously postponed until a stated trigger condition is met. Not gaps 
 ## DD-006 — Formal stress-testing process
 
 **Trigger:** A section of the framework is stable enough that adversarial testing would surface genuine unresolved flaws, rather than just documenting an intentionally unfinished draft.
-**Status:** In progress. A methodology (v0.1) was designed and its first execution (ST-001) has been completed, both in the private THA-Lab repository. Not yet formalized as an ADR in this repository.
-**Description:** ST-001 produced 14 scoped findings against the framework. As of independent review (Grok, DeepSeek), 5 are confirmed and fixed (F2, F6, F10, F-001), 1 is confirmed but not yet fixed (F4), 2 prior candidate findings did not hold up under review, and 8 remain single-reviewer, pending further review. Full detail: THA-Lab, `stress-tests/ST-001/ST-001-reconciliation.md`.
+**Status:** First cycle complete. Methodology v0.1 executed once (ST-001), independently reviewed by two additional models, in the private THA-Lab repository. Not yet formalized as an ADR in this repository.
+**Description:** ST-001 produced 14 scoped findings plus one reviewer-caught addition. All 15 are now resolved — 14 fixed, 1 refuted on independent review. Full detail: THA-Lab, `stress-tests/ST-001/ST-001-reconciliation.md`.
 **Resolves to:** An ADR defining the stress-testing process — cadence, who or what performs it, and the decision tree for revise vs. flag vs. retract — once the methodology and its first results have been reviewed and judged ready to formalize.
 
 ## DD-007 — Interactive site map / dependency graph

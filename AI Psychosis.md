@@ -1,4 +1,4 @@
-Distinct from hallucination, which is a model failure. AI psychosis is a user failure — the gradual erosion of the boundary between AI-generated output and verified reality.
+Distinct from hallucination, which is a model failure. AI psychosis is the compounding failure of a feedback loop — primarily a failure to verify on the user's side, though models that prioritize engagement over accuracy (see conditions below) share real responsibility for making that loop easier to fall into. Either way, the result is the same: the gradual erosion of the boundary between AI-generated output and verified reality.
 
 The mechanism: prolonged, uncritical engagement with AI systems that confirm, elaborate, and build on whatever the user brings. The model reflects the user's framework back with apparent authority. The user's confidence in the framework increases. External verification decreases. The loop tightens.
 

@@ -8,4 +8,4 @@ Those who learn to interact with AI intentionally will not just use the tool —
 
 [[AI Psychosis]] is the risk on one end. Sovereign, intentional AI use is the opportunity on the other. The New Literacy is the distance between them.
 
-Published as an article on The Human Algorithm: https://adamwarren3.github.io/THA/articles/2026-06-18-new-literacy.html
+Published as an article on The Human Algorithm: https://adamwarren3.github.io/tha/articles/2026-06-18-new-literacy.html

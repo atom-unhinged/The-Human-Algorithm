@@ -18,4 +18,4 @@ What would count as evidence — and what would count against. If the propagatio
 
 [[Memnetic]] is the transmission mechanism at the cultural scale. [[AI as Cognitive Scaffold]] is the computational scale made practically useful. [[The Human Algorithm]] is the deliberate application of this framework across all three scales simultaneously.
 
-The historical origin of this observation, dramatized: The Language Underneath — https://adamwarren3.github.io/THA/articles/2026-06-20-language-underneath.html
+The historical origin of this observation, dramatized: The Language Underneath — https://adamwarren3.github.io/tha/articles/2026-06-20-language-underneath.html

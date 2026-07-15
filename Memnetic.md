@@ -8,4 +8,4 @@ Memetic + memory. Transmitted ideas that become stored identity. The point where
 
 Memnetic transmission is not always passive — conscious adoption of a framework is also memnetic. The distinction is awareness.
 
-The mechanism at population scale, dramatized: The Broadcast — https://adamwarren3.github.io/THA/articles/2026-06-22-the-broadcast.html
+The mechanism at population scale, dramatized: The Broadcast — https://adamwarren3.github.io/tha/articles/2026-06-22-the-broadcast.html

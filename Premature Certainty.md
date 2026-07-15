@@ -6,4 +6,4 @@ The signature of premature certainty is that nobody lies. Every input is true. T
 
 [[Epistemic Hygiene]] is the individual counter-practice. [[Signal vs Slop]] names the environment that accelerates it. [[Memnetic]] describes how the arranged story, once assembled, transmits and stores as fact.
 
-The mechanism, demonstrated: BEN — https://adamwarren3.github.io/THA/articles/2026-06-23-ben.html
+The mechanism, demonstrated: BEN — https://adamwarren3.github.io/tha/articles/2026-06-23-ben.html

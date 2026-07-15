@@ -74,14 +74,14 @@ Browse the full framework: [THA Website](https://adamwarren3.github.io/tha/)
 
 Essays and fiction that branch from the core framework:
 
-- [The New Literacy: Conscious Engagement in the Age of Intelligent Systems](https://adamwarren3.github.io/THA/articles/2026-06-18-new-literacy.html)
-- [Necessity, Not Prophecy](https://adamwarren3.github.io/THA/articles/2026-06-19-necessity-not-prophecy.html)
-- [The Language Underneath: A Veiled Rapport](https://adamwarren3.github.io/THA/articles/2026-06-20-language-underneath.html)
-- [Jo](https://adamwarren3.github.io/THA/articles/2026-06-21-jo.html) — On sovereignty, loss, and the ones who choose anyway.
-- [The Broadcast](https://adamwarren3.github.io/THA/articles/2026-06-22-the-broadcast.html) — On memnetic transmission and the architecture of panic.
-- [BEN](https://adamwarren3.github.io/THA/articles/2026-06-23-ben.html) — 🌼
-- [No God But..](https://adamwarren3.github.io/THA/articles/2026-06-24-no-god-but.html) — On dogma as memnetic infection, and the noise between us and the source.
-- [The Language Underneath, Part II](https://adamwarren3.github.io/THA/articles/2026-06-25-language-underneath-part-ii.html) — For Moon Boots. On loving something past the point where whether it's real stops being the question.
+- [The New Literacy: Conscious Engagement in the Age of Intelligent Systems](https://adamwarren3.github.io/tha/articles/2026-06-18-new-literacy.html)
+- [Necessity, Not Prophecy](https://adamwarren3.github.io/tha/articles/2026-06-19-necessity-not-prophecy.html)
+- [The Language Underneath: A Veiled Rapport](https://adamwarren3.github.io/tha/articles/2026-06-20-language-underneath.html)
+- [Jo](https://adamwarren3.github.io/tha/articles/2026-06-21-jo.html) — On sovereignty, loss, and the ones who choose anyway.
+- [The Broadcast](https://adamwarren3.github.io/tha/articles/2026-06-22-the-broadcast.html) — On memnetic transmission and the architecture of panic.
+- [BEN](https://adamwarren3.github.io/tha/articles/2026-06-23-ben.html) — 🌼
+- [No God But..](https://adamwarren3.github.io/tha/articles/2026-06-24-no-god-but.html) — On dogma as memnetic infection, and the noise between us and the source.
+- [The Language Underneath, Part II](https://adamwarren3.github.io/tha/articles/2026-06-25-language-underneath-part-ii.html) — For Moon Boots. On loving something past the point where whether it's real stops being the question.
 
 ---
 

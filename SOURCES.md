@@ -117,6 +117,12 @@ Last verified against live sources: 2026-07-12. Note on [S17]: independent re-ve
 
 **[S33]** — Forgiveness interventions are associated with reduced depression, anxiety, and hostility. **Class (a).** Wade, N., Hoyt, W., Kidwell, J. & Worthington, E. (2014), *Journal of Consulting and Clinical Psychology*, meta-analysis of forgiveness interventions. Associations, not causal claims — the note says associations and nothing stronger.
 
+## Practice claims (THA-Lab)
+
+**[S34]** — Gollwitzer (1999), *American Psychologist* 54(7):493–503; meta-analysis Gollwitzer & Sheeran (2006), *Advances in Experimental Social Psychology* 38:69–119. Specific if-then plans outperform vague intentions at goal completion. Real, replicated effect, ordinary mechanism — attention and cue-response. **Class (a).**
+
+**[S35]** — Born, Hansen, Marshall, Mölle & Fehm (1999), *Nature* 397(6714):29–30. Anticipatory ACTH rise before an intended wake time, present only when the wake-up was expected. Self-awakening is a documented phenomenon. **Class (a).**
+
 ---
 
 ## Entries carried as unverifiable or as framework positions
